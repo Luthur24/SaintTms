@@ -434,8 +434,8 @@
     background: var(--cream);
   }
   .card-media img {
-    width: 100%; height: 100%;
-    object-fit: cover;
+    width: 100%; height:auto;
+    object-fit: ;
     transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
   }
   .product-card:hover .card-media img { transform: scale(1.06); }
@@ -1367,7 +1367,7 @@
       <span class="total-label">Total</span>
       <span class="total-amount" id="cart-total">₦0</span>
     </div>
-    <p class="payment-note">Payment via Opay to Gerard — <strong>08034793422</strong></p>
+    <p class="payment-note">Payment via Opay to Gerard — <strong>6557550629 opay</strong></p>
     <button class="checkout-btn" id="checkout-btn">
       <svg viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.76 19.79 19.79 0 01.01 1.12 2 2 0 012 .02h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
       Checkout via WhatsApp
@@ -1424,7 +1424,7 @@
     </div>
 
     <div class="payment-info-box">
-      <p>💳 Payment via <strong>Opay</strong><br/>Account Name: <strong>Gerard</strong><br/>Account Number: <strong>08034793422</strong><br/><br/>Send payment evidence along with your order on WhatsApp.</p>
+      <p>💳 Payment via <strong>Opay</strong><br/>Account Name: <strong>Gerard</strong><br/>Account Number: <strong>6557550629</strong><br/><br/>Send payment evidence along with your order on WhatsApp.</p>
     </div>
 
     <button class="send-whatsapp-btn" id="send-whatsapp-btn">
@@ -1446,7 +1446,7 @@ const PRODUCTS = [
     category: "tops",
     price: 20000,
     badge: null,
-    sizes: ["S","M","L","XL","XXL"],
+    sizes: ["M","L","XL","XXL"],
     img: "whitetop.jpg",
     desc: null
   },
@@ -1455,7 +1455,7 @@ const PRODUCTS = [
     category: "tops",
     price: 20000,
     badge: null,
-    sizes: ["S","M","L","XL"],
+    sizes: ["M","L","XL"],
     img: "pinkandpurpletop.jpg",
     desc: null
   },
@@ -1469,7 +1469,7 @@ const PRODUCTS = [
     desc: null
   },
   {
-    id: 3, name: "Celestial purity",
+    id: 4, name: "Celestial purity",
     category: "tops",
     price: 20000,
     badge: null,
@@ -1478,15 +1478,23 @@ const PRODUCTS = [
     desc: null
   },
   {
-    id: 4, name: "Bottoms Coming soon....",
-    category: "bottoms",
-    price: 0,
+    id: 5, name: "Halo",
+    category: "tops",
+    price: 20000,
     badge: null,
-    sizes: "Coming soon....",
-    img: null,
-    desc: "Bottoms Coming soon...."
+    sizes: ["M","L","XL","XXL"],
+    img: "blacktop.jpg",
+    desc: null
+  },
+  {
+    id: 6, name: "Guardian light",
+    category: "tops",
+    price: 20000,
+    badge: null,
+    sizes: ["M","L","XL","XXL"],
+    img: "whiteshirt.jpg",
+    desc: null
   }
-  
 ];
 
 const SELLER_PHONE = "2348034793422";
@@ -1778,7 +1786,7 @@ Delivery Address: ${address}
 💳 *PAYMENT*
 I'll send payment to your Opay:
 Name: Gerard
-Number: 08034793422
+Number: 6557550629
 
 Please confirm my order. Thank you! 🙏`;
 
